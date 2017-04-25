@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mi reproductor de audio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #duracion {
+            width: 100px;
+            border: 1px solid #808080;
+            height: 20px;
+            margin: 2px;
+        }
+        
+        #duracion,
+        #botones {
+            padding: 1px;
+            float: left;
+        }
+        
+        #duracion span {
+            width: 1px;
+            background-color: #bfbfbf;
+            height: 20px;
+            position: absolute;
+        }
+        
+        #duracion div {
+            text-align: center;
+            position: relative;
+        }
+        
+        #botones {
+            margin-left: 5px;
+        }
+        
+        #botones button {
+            font-size: 1em;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="miAudio" src="parte1.mp3"></audio>
+
+    <div id="duracion">
+        <span></span>
+        <div></div>
+    </div>
+
+    <div id="botones">
+        <button id="iniciar" onclick="iniciar()">&#8227;</button>
+        <button id="reiniciar" onclick="reiniciar()">&#8635;</button>
+
+
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
+
+</body>
+
+</html>
